@@ -9,7 +9,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(features = "src/test/resources/features",
 glue = {"" },
 monochrome = true,
-dryRun = false)
+dryRun = false,
+tags = "@cadastrarUsuario")
 
 public class Runner {
 

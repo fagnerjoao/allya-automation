@@ -66,6 +66,12 @@ public class HomePage {
 
 	}
 
+	public void verificarTituloPaginaInicial() throws Throwable {
+
+		Assert.assertEquals(Driver.getDriver().getTitle(), "Allya – Faz seu salário render mais para alcançar seus objetivos");
+
+	}
+
 	public void verificarAbaColaborador() throws Throwable {
 		abaColaborador.click();
 		String txt = lblParaVc.getText();

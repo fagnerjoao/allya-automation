@@ -5,8 +5,6 @@ Funcionalidade: Cadastrar Usuário
 
   @cadastrarUsuario
   Cenário: Cadastro Básico
-   Dado que eu esteja na página inicial
-   Quando veirifico as abas  Colaborador, Empresas e Parceiro
-   E faço o cdastro inicial
-   Então valido a tela CPF e CNPJ
-   
+   Dado que eu veirifico as abas  Colaborador, Empresas e Parceiro
+   Quando faço o cdastro
+   Então valido a mensagem se sucesso a "Você finalizou o cadastro básico."
