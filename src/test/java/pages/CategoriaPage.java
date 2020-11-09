@@ -19,11 +19,9 @@ public class CategoriaPage {
 
 
 	public void selectCategoria(String categoria) {
-		// WebElement listaCategoria = Driver.findElement(By.xpath("cheese"));
+
 		Select dropdown = new Select(btnCategoria);
 		dropdown.selectByValue(categoria);
 	}
-
-
 
 }

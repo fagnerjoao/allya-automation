@@ -24,19 +24,15 @@ public class Datas {
 		dtFinal = dtFinal.replace("/", ""); // tira barra
 		return dtFinal = dtFinal.replace("-", "");
 
-		//System.out.println(dtFinal);
 	}
 	public String gerarHoraCompleta()  {
 		int hora, minutos, segundos;
 		
 		Calendar calendario = Calendar.getInstance();
-		
-		
+
 		hora = calendario.get(Calendar.HOUR_OF_DAY);
 		minutos = calendario.get(Calendar.MINUTE);
 		segundos = calendario.get(Calendar.SECOND);
-		
-		//System.out.println(hora + "/" + minutos + "/" + segundos);
 		
 		String horaCompleta = (hora + "/" + minutos + "/" + segundos);
 		return horaCompleta;
